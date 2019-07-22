@@ -1,4 +1,4 @@
-# Burp Suite JSON-JS-Beautifier
+# Burp Suite JSON/JS-Beautifier
 
 
 
