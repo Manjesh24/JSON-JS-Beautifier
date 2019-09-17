@@ -8,6 +8,17 @@ It is diffcult for web application security researchers to analyse the JS files 
 #### This extension is based on the following module/library :
 JS files of http://jsbeautifier.org/
 
+
+## Installation
+* Download Burp Suite : http://portswigger.net/burp/download.html
+* Download Jython standalone JAR: https://www.jython.org/download
+* Open burp -> Extender -> Options -> Python Environment -> Select File -> Choose the Jython standalone JAR
+* Install packages from requirements.txt using pip install -r requirements (use jython's pip!)
+* Specify "Folder for loading modules" in Extender->Options->Python environment. It should reflect your global or virtualenv site-packages. E.g. "C:\jython2.7\lib\site-packages" for WIN, or /opt/jython/Lib/site-packages fo Archlinux. If you use virtualenv (you should!) - it would be /path/to/virtualenv/Lib/site-packages.
+* Download the extension .py file.
+* Open Burp -> Extender -> Extensions -> Add -> Choose the file.
+
+
 Before:
 ![alt text](https://raw.githubusercontent.com/Manjesh24/JSON-JS-Beautifier/master/Images/Before.png)
 
